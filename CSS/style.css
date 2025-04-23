@@ -16,4 +16,10 @@ body {
     line-height: inherit
 }
 
-
+.carousel {
+    margin-top: 11.5rem;
+}
+.carousel__text p {
+    color:rgb(117 118 147) ;
+}
+.botton { margin-top: 2rem;}
