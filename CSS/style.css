@@ -6,6 +6,7 @@ html {
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
+    font-family: __Inter_e66fe9, __Inter_Fallback, __Roboto_e66fe9, __Roboto_Fallback, sans-serif;
     font-feature-settings: normal;
     font-variation-settings: normal
 }
