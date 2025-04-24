@@ -22,3 +22,14 @@ body {
     color:rgb(117 118 147) ;
 }
 .botton { margin-top: 2rem;}
+
+.botton { margin-top: 2rem;}
+
+.bg-meta {
+    --tw-bg-opacity: 1;
+    background-color: rgb(32 197 168 / var(--tw-bg-opacity));
+}
+
+.carousel__text {
+    color: rgb(117 118 147);
+} s
