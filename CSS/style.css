@@ -111,3 +111,6 @@ body {
   .cd-top--fade-out { 
     opacity: .5;
   }
+
+  .group-hover\:scale-110 {
+}
