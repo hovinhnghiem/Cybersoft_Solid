@@ -72,6 +72,7 @@ body {
 .footer__right {
     width: 60%;
 }
+
 .container__tp {
     width: 80%;
     
@@ -96,3 +97,22 @@ body {
     --tw-shadow-colored: 0px 30px 50px var(--tw-shadow-color)
 
 }
+
+
+
+.backtotop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .cd-top--fade-out { 
+    opacity: .5;
+  }
