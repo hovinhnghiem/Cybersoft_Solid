@@ -33,3 +33,17 @@ body {
 .carousel__text {
     color: rgb(117 118 147);
 }
+
+.container__tp {
+    width: 80%;
+    
+}
+
+.bg__Solid {
+    background-image: url('./../images/shape-dotted-light.svg');
+}
+
+.border-stroke {
+    --tw-border-opacity: 1;
+    border-color: rgb(238 238 238/var(--tw-border-opacity));
+}
