@@ -34,11 +34,6 @@ body {
     color: rgb(117 118 147);
 }
 
-
-
-
-
-
 .images__background {
     height: 100vh;  
     background-image: 
@@ -72,7 +67,7 @@ body {
 .footer__right {
     width: 60%;
 }
-=======
+
 .container__tp {
     width: 80%;
     
