@@ -39,8 +39,8 @@
 
 <body>
     <!-- Header -->
-    <header class="fixed left-0 top-0 z-999 w-full py-7 ">
-        <nav class="relative w-full items-center justify-between px-[268px] flex">
+    <header class="fixed left-0 top-0 bg-white z-999 w-full py-7 !py-4 shadow transition duration-100 ">
+        <nav class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
             <div class="flex flex-wrap items-center justify-between w-full">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="./images/logo-light.svg" width="119.03" height="30" class="w-full dark:hidden"
@@ -365,7 +365,7 @@
                 <h4 class="font-medium uppercase text-black dark:text-white"><span
                         class="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">New</span>
                     SaaS Boilerplate for Next.js</h4>
-                <h2 class="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">A Complete Solution
+                <h2 class="relative mb-6 text-5xl font-bold text-black dark:text-white xl:text-hero">A Complete Solution
                     for<span
                         class="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">SaaS
                         Startup</span></h2>
@@ -436,7 +436,125 @@
         </div>
     </section>
     <!-- SolidUi -->
-    <section></section>
+    <section class="bg__Solid max-w-8xl mx-auto px-4">
+        <div class="rounded-lg border border-[#e5e7eb] shadow-[0_0_30px_0_rgba(0,0,0,0.05)] bg-white">
+            <ul class="flex justify-center flex-wrap -mb-px text-sm font-medium text-center gap-x-35  lg:gap-7.5 xl:mb-35 xl:gap-35"
+                id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+
+                <!-- Tab 1 -->
+                <li class="me-2" role="presentation">
+                    <button class="inline-flex items-center space-x-2 p-4 border-b-5 rounded-t-full" id="profile-tab"
+                        data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
+                        aria-selected="false">
+                        <span
+                            class="w-[50px] h-[50px] flex items-center justify-center rounded-full border border-stroke text-[18px] font-semibold">01</span>
+                        <span class="text-base text-[#181C31]">Clean User Interface</span>
+                    </button>
+                </li>
+
+                <!-- Tab 2 -->
+                <li class="me-2" role="presentation">
+                    <button
+                        class="inline-flex items-center space-x-2 p-4 border-b-5 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                        id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                        aria-controls="dashboard" aria-selected="false">
+                        <span
+                            class="w-[50px] h-[50px] flex items-center justify-center rounded-full border border-stroke text-[18px] font-semibold">02</span>
+                        <span class="text-base text-[#181C31]">Essential Business Pages</span>
+                    </button>
+                </li>
+
+                <!-- Tab 3 -->
+                <li class="me-2" role="presentation">
+                    <button
+                        class="inline-flex items-center space-x-2 p-4 border-b-5 rounded-t-lg hover:text-gray-600 hover:border-stroke dark:hover:text-gray-300"
+                        id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
+                        aria-selected="false">
+                        <span
+                            class="w-[50px] h-[50px] flex items-center justify-center rounded-full border border-stroke text-[18px] font-semibold">03</span>
+                        <span class="text-base text-[#181C31]">Fully Functional Integrations</span>
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+        <div id="default-tab-content">
+            <div class="hidden max-w-6xl mx-auto p-4 rounded-lg mt-[86px] gap-19 flex dark:bg-gray-800 mb-[60px]"
+                id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <!-- Left content -->
+                <div class="lg:w-1/2 text-left lg:text-left">
+                    <h2 class="mb-7 mt-7 text-[40px] font-bold text-black dark:text-white xl:text-sectiontitle2">Solid
+                        UI with Solid Features.</h2>
+                    <p class="text-[#757693] text-base mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum
+                        ultrices. Fusce consectetur le.
+                    </p>
+                    <p class="text-[#757693] text-base mb-5">
+                        Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec finibus sagittis. Nulla ligula
+                        nunc egestas ut.
+                    </p>
+                </div>
+
+                <!-- Right image -->
+                <div class="lg:w-1/2">
+                    <div class="rounded-xl border-8 border-pink-100 shadow-lg overflow-hidden">
+                        <img src="./images/features-light-01.png" alt="UI preview" class="w-full h-auto" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="hidden max-w-6xl mx-auto p-4 rounded-lg mt-[86px] gap-19 flex dark:bg-gray-800 mb-[60px]"
+                id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                <!-- Left content -->
+                <div class="lg:w-1/2 text-left lg:text-left">
+                    <h2 class="mb-7 mt-7 text-[40px] font-bold text-black dark:text-white xl:text-sectiontitle2">Pages
+                        and UI Components You Need for a SaaS.</h2>
+                    <p class="text-[#757693] text-base mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum
+                        ultrices. Fusce consectetur le.
+                    </p>
+                    <p class="text-[#757693] text-base mb-5">
+                        Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec finibus sagittis. Nulla ligula
+                        nunc egestas ut.
+                    </p>
+                </div>
+
+                <!-- Right image -->
+                <div class="lg:w-1/2">
+                    <div class="rounded-xl border-8 border-pink-100 shadow-lg overflow-hidden">
+                        <img src="./images/features-light-01.png" alt="UI preview" class="w-full h-auto" />
+                    </div>
+                </div>
+            </div>
+            <div class="hidden max-w-6xl mx-auto p-4 rounded-lg bg-gray-50 mt-[86px] gap-19 flex dark:bg-gray-800 mb-[60px]"
+                id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                <!-- Left content -->
+                <div class="lg:w-1/2 text-left lg:text-left">
+                    <h2 class="mb-7 mt-7 text-[40px] font-bold text-black dark:text-white xl:text-sectiontitle2">
+                        Functional Blog, DB, Auth and Many More</h2>
+                    <p class="text-[#757693] text-base mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum
+                        ultrices. Fusce consectetur le.
+                    </p>
+                    <p class="text-[#757693] text-base mb-5">
+                        Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec finibus sagittis. Nulla ligula
+                        nunc egestas ut.
+                    </p>
+                </div>
+
+                <!-- Right image -->
+                <div class="lg:w-1/2">
+                    <div class="rounded-xl border-8 border-pink-100 shadow-lg overflow-hidden">
+                        <img src="./images/features-light-01.png" alt="UI preview" class="w-full h-auto" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
     <!-- Number -->
     <section class="number px-4 py-20 md:px-8 lg:py-22.5 2xl:px-0          ">
         <div class="container w-full items-center justify-between px-[80px] pb-[100px]">
@@ -470,7 +588,85 @@
 
     </section>
     <!-- Inegration -->
-    <section></section>
+    <section>
+        <!-- Top -->
+        <div class="border-stroke mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+            <div class="animate_top mx-auto text-center" style="opacity: 1; transform: none;">
+                <div
+                    class="mb-4 inline-block rounded-full bg-zumthor px-5 py-2.5 dark:border dark:border-strokedark dark:bg-black sectioninline-block px-4 py-1 mb-4 text-sm font-medium text-gray-700 bg-blue-100 rounded-full">
+                    <span class="text-sectiontitle font-medium text-black dark:text-white">INTEGRATIONS</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Packed with all the key <br> integrations you need</h2>
+                <p class="text-gray-400 text-base mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                    In convallis tortor eros. <br> Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+            </div>
+        </div>
+        <!-- Bottom -->
+        <div
+            class="pattern-dots pattern-blue-500 pattern-bg-white pattern-size-4 pattern-opacity-10 
+            relative z-50 mx-auto mt-15 max-w-[70%] px-4 md:px-8 xl:mt-20 xl:px-0">
+            <div class="absolute -top-3/4 left-0 right-0 -z-1 mx-auto h-full w-full"><img alt="Dotted" loading="lazy"
+                    width="1200" height="400" decoding="async" data-nimg="1" class="dark:hidden"
+                    src="./images/shape-dotted-light.svg" style="color: transparent; position: static;"><img
+                    alt="Dotted" loading="lazy" decoding="async" data-nimg="fill" class="hidden dark:block"
+                    src="/images/shape-dotted-dark.svg"
+                    style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+            <div class="flex flex-wrap justify-around gap-y-10">
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;">
+                    <div class="inline-block rounded-[10px] bg-blue-white p-4.5 shadow-lg dark:bg-btndark"><img
+                            alt="Brand" loading="lazy" width="50" height="50" decoding="async" data-nimg="1"
+                            src="./images/brand-07.svg" style="color: transparent;"></div>
+                </div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;"></div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;">
+                    <div class="inline-block rounded-[10px] bg-white p-4.5 shadow-lg dark:bg-btndark"><img
+                            alt="Brand" loading="lazy" width="50" height="50" decoding="async" data-nimg="1"
+                            src="./images/brand-08.svg" style="color: transparent;"></div>
+                </div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;">
+                    <div class="h-[11px] w-[11px] rounded-full bg-[#FFDB26]"></div>
+                </div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;">
+                    <div class="inline-block rounded-[10px] bg-white p-4.5 shadow-lg dark:bg-btndark"><img
+                            alt="Brand" loading="lazy" width="50" height="50" decoding="async" data-nimg="1"
+                            src="./images/brand-09.svg" style="color: transparent;"></div>
+                </div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;"></div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;">
+                    <div class="h-[15px] w-[15px] rounded-full bg-[#62E888]"></div>
+                </div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;">
+                    <div class="inline-block rounded-[10px] bg-white p-4.5 shadow-lg dark:bg-btndark"><img
+                            alt="Brand" loading="lazy" width="50" height="50" decoding="async" data-nimg="1"
+                            src="./images/brand-10.svg" style="color: transparent;"></div>
+                </div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;">
+                    <div class="h-[23px] w-[23px] rounded-full bg-[#EF5C00]"></div>
+                </div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;">
+                    <div class="inline-block rounded-[10px] bg-white p-4.5 shadow-lg dark:bg-btndark"><img
+                            alt="Brand" loading="lazy" width="50" height="50" decoding="async" data-nimg="1"
+                            src="./images/brand-11.svg" style="color: transparent;"></div>
+                </div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;">
+                    <div class="h-[15px] w-[15px] rounded-full bg-[#016BFF]"></div>
+                </div>
+                <div class="animate_top w-1/6" style="opacity: 1; transform: none;">
+                    <div class="inline-block rounded-[10px] bg-white p-4.5 shadow-lg dark:bg-btndark"><img
+                            alt="Brand" loading="lazy" width="50" height="50" decoding="async" data-nimg="1"
+                            src="./images/brand-12.svg" style="color: transparent;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- SignUpFree -->
     <section class="signup__free ">
         <div
@@ -938,6 +1134,7 @@
     <!-- Script FLowbites -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
+
     <!-- Slick Jquery  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -953,6 +1150,10 @@
             });
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 
 </body>
 
