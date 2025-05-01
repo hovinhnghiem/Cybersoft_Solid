@@ -33,3 +33,41 @@ body {
 .carousel__text {
     color: rgb(117 118 147);
 }
+
+
+
+
+
+.images__background {
+    height: 100vh;  
+    background-image: 
+    
+      url('./../images/shape-dotted-light.svg'),
+      url('./../images/shape-05.png'),
+      url('./../images/shape-04.png');
+      
+      
+    background-position: center center, bottom right, top left; /* Đặt các SVG chồng lên nhau ở giữa */
+    background-repeat: no-repeat, no-repeat, no-repeat; /* Không lặp lại */
+    background-size: 100% 100%, 132px 132px, 335px 384px; /* Điều chỉnh kích thước các SVG */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.Send {
+    width: 70%;
+}
+.find {
+    width: 30%;
+}
+
+.footer__left {
+    width: 40%;
+}
+.footer__right {
+    width: 60%;
+}
